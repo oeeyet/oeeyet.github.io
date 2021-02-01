@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="style1 copy.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&family=Song+Myung&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/a8d94857fb.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="main.js" defer></script>
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="nav__long">
+        <i class="fab fa-battle-net"></i>
+        <a href="">KNOWN</a>
+      </div>
+      <ul class="navbar__menu">
+        <li><a href="">HOME</a></li>
+        <li><a href="">GALLARY</a></li>
+        <li><a href="">ABOUT US</a></li>
+        <li><a href="">FAQ</a></li>
+        <li><a href="">BOOKING</a></li>
+      </ul>
+      <ul class="navbar__icons">
+        <li><i class="fab fa-instagram"></i></li>
+        <li><i class="fab fa-google"></i></li>
+      </ul>
+      <a href="#" class="navbar__toogleBtn">
+        <i class="fas fa-bars"></i>
+      </a>
+    </nav>
+    <div class="main">
+      <div class="title">
+        <p>이-달의 추천 다큐</p>
+      </div>
+      <div class="subtitle">
+        <span>환경</span>
+        <span>사회</span>
+        <span>보건</span>
+
+        <!-- <p>환경 사회 보건</p> -->
+      </div>
+    </div>
+    <section>
+      <div class="swiper-container">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <div class="testimonialBox">
+              <img
+                src="social.png"
+                class="quote"
+                width="200px"
+                height="200px"
+              />
+              <div class="content">
+                <p>중독과 가짜 뉴스에 시달리는 현대 사회</p>
+                <p>실리콘 밸리 전문가들이 용기내어 경고한다.</p>
+                <p>자신들의 창조물, 소셜미디어를 주의하라고</p>
+                <div class="details">
+                  <div class="imgBx">
+                    <img src="cctv.png" />
+                  </div>
+                  <h3>영화 특징<br /><span>12세 관람가</span></h3>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="testimonialBox">
+              <img src="coro.png" class="quote" width="300px" />
+              <div class="content">
+                <p>“팬데믹이 왔다” 세계를 멈추게 한 코로나 19.</p>
+                <p>대체 어떻게 우리의 삶을 송두리째 바꾼 것일까?</p>
+                <p>전문가의 설명을 듣고, 데이터를 살펴보자.</p>
+                <p>명확하고도 유용한 정보를 얻을 수 있을거다.</p>
+
+                <div class="details">
+                  <div class="imgBx">
+                    <img src="virus.png" />
+                  </div>
+                  <h3>영화 특징<br /><span>12세 관람가</span></h3>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="testimonialBox">
+              <img
+                src="planet.jpg"
+                class="quote"
+                width="200px"
+                height="200px"
+              />
+              <div class="content">
+                <p>“하나뿐인 지구”</p>
+                <p>지구 생태계의 다양성은 어느 정도일까?</p>
+                <p>헤푸 해안의 바닷새들부터</p>
+                <p>세렝게티 평원의 영양들까지,</p>
+                <p>각양각색의 생명체를 만난다.</p>
+                <p>이 모든 자연은 하나로 연결되어 있다.</p>
+
+                <div class="details">
+                  <div class="imgBx">
+                    <img src="whale.png" />
+                  </div>
+                  <h3>영화 특징<br /><span>전체 관람가</span></h3>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="../package/swiper-bundle.min.js"></script>
+    <script>
+      var swiper = new Swiper(".swiper-container", {
+        effect: "coverflow",
+        grabCursor: true,
+        centeredSlides: true,
+        slidesPerView: "auto",
+        coverflowEffect: {
+          rotate: 50,
+          stretch: 0,
+          depth: 100,
+          modifier: 1,
+          slideShadows: true,
+        },
+        loop: true,
+      });
+    </script>
+  </body>
+</html>
